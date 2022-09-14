@@ -1,0 +1,20 @@
+// bring the code from scm
+
+git clone url
+
+// pkg
+
+zip -r name-$BUILD_NUMBER.zip *
+
+// artifactory
+
+aws s3 cp name-$BUILD_NUMBER.zip s3://bucket/
+
+//cd
+
+aws s3 cp s3://bucket/name-name-$BUILD_NUMBER.zip .
+
+//extract and copy to target server
+unzip file.zip
+
+scp 
